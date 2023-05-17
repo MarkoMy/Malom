@@ -4,8 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        application.cpp \
         main.cpp \
-        graphics/graphics.cpp
+        graphics/graphics.cpp \
+        widgets.cpp
 
 
 INCLUDEPATH += $$PWD/.
@@ -22,3 +24,7 @@ else:unix: LIBS += -L$$PWD/./ -llibSDL2_ttf.dll
 
 INCLUDEPATH += $$PWD/SDL2
 DEPENDPATH += $$PWD/SDL2
+
+HEADERS += \
+    application.hpp \
+    widgets.hpp
