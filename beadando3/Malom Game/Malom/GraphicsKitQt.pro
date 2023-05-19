@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         application.cpp \
+        gamerules.cpp \
         main.cpp \
         graphics/graphics.cpp \
         widgets.cpp
@@ -27,4 +28,5 @@ DEPENDPATH += $$PWD/SDL2
 
 HEADERS += \
     application.hpp \
+    gamerules.hpp \
     widgets.hpp
