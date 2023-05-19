@@ -10,6 +10,7 @@ SOURCES += \
         gamerules.cpp \
         main.cpp \
         graphics/graphics.cpp \
+        malom.cpp \
         statictext.cpp \
         widgets.cpp
 
@@ -36,5 +37,6 @@ HEADERS += \
     babuk.hpp \
     gamedraw.hpp \
     gamerules.hpp \
+    malom.hpp \
     statictext.hpp \
     widgets.hpp

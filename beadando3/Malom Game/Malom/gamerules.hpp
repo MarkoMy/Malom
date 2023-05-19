@@ -11,8 +11,7 @@ public:
 
     }
 
-    virtual void Moveing();
-    virtual void
+    //virtual void Moveing();
 };
 
 #endif // GAMERULES_HPP
