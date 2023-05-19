@@ -1,4 +1,5 @@
 #include "application.hpp"
+#include "statictext.hpp"
 #include <fstream>
 #include <vector>
 #include <iostream>
@@ -19,17 +20,20 @@ struct Babuk{
 
 class MyApp : public application{
 public:
-    MyApp(){}
+    MyApp(){
+        ColorLabel = new StaticText(this,20,20,100,40,"Fehér");
+    }
 
 
 protected:
     vector<Babuk> babu[18];
+    StaticText *ColorLabel;
 };
 
 int main()
 {
     MyApp app;
 
-    app.event_loop(600,600);
+    app.event_loop(800,800);
     return 0;
 }

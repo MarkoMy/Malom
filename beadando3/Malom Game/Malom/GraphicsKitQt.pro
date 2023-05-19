@@ -8,6 +8,7 @@ SOURCES += \
         gamerules.cpp \
         main.cpp \
         graphics/graphics.cpp \
+        statictext.cpp \
         widgets.cpp
 
 
@@ -27,6 +28,9 @@ INCLUDEPATH += $$PWD/SDL2
 DEPENDPATH += $$PWD/SDL2
 
 HEADERS += \
+    ../../../../../../Desktop/laptop mappa/widget/peldawidgetekre/statictext.hpp \
+    ../../../../../../Desktop/laptop mappa/widget/peldawidgetekre/statictext.hpp \
     application.hpp \
     gamerules.hpp \
+    statictext.hpp \
     widgets.hpp

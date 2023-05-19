@@ -6,8 +6,10 @@
 class GameRules : public Widget
 {
 public:
-    GameRules();
+    GameRules(application*,int x, int y, int sx, int sy);
+    virtual ~GameRules(){
 
+    }
 };
 
 #endif // GAMERULES_HPP
