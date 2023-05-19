@@ -7,10 +7,12 @@
 class GameDraw : public Widget
 {
 public:
-    GameDraw();
+    GameDraw(application*,int x, int y, int sx, int sy);
     virtual ~GameDraw(){
 
     };
+
+    virtual void TableDraw() const;
 };
 
 #endif // GAMEDRAW_HPP

@@ -12,7 +12,6 @@ public:
     void event_loop(int x, int y);
     void register_widget(Widget*);
     void start(int, int);
-    void tabledraw();
 protected:
     std::vector<Widget*> widgets;
     bool startCount = true;

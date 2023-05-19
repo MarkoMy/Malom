@@ -10,6 +10,9 @@ public:
     virtual ~GameRules(){
 
     }
+
+    virtual void Moveing();
+    virtual void
 };
 
 #endif // GAMERULES_HPP
