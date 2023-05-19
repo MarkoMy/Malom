@@ -7,7 +7,6 @@
 class Widget {
 protected:
     application*_parent;
-    bool fokusz;
     int _x, _y, _size_x, _size_y;
 public:
     Widget(application*,int x, int y, int sx, int sy);

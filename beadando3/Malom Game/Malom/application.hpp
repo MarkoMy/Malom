@@ -9,7 +9,7 @@ class Widget;
 class application
 {
 public:
-    void event_loop();
+    void event_loop(int, int);
     void register_widget(Widget*);
     void start(int, int);
 protected:
