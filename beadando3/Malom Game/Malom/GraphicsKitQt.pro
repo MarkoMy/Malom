@@ -5,6 +5,8 @@ CONFIG -= qt
 
 SOURCES += \
         application.cpp \
+        babuk.cpp \
+        gamedraw.cpp \
         gamerules.cpp \
         main.cpp \
         graphics/graphics.cpp \
@@ -31,6 +33,8 @@ HEADERS += \
     ../../../../../../Desktop/laptop mappa/widget/peldawidgetekre/statictext.hpp \
     ../../../../../../Desktop/laptop mappa/widget/peldawidgetekre/statictext.hpp \
     application.hpp \
+    babuk.hpp \
+    gamedraw.hpp \
     gamerules.hpp \
     statictext.hpp \
     widgets.hpp

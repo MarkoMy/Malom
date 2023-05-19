@@ -7,7 +7,12 @@ void application::event_loop(int x, int y) {
     event ev;
     if(startCount == true){
         start(x,y);
+        tabledraw();
+        for (Widget * w : widgets) {
+            w->draw();
+        }
         startCount = false;
+        gout << refresh;
     }
 
     int focus = -1;
@@ -37,8 +42,12 @@ void application::register_widget(Widget * w){
 
 void application::start(int x, int y){
     gout.open(x,y);
-    gout.load_font("LiberationSans-Regular.ttf",50);
-    gout << move_to(0,0) << color(255,219,172) << box(x,y)
+    gout.load_font("LiberationSans-Regular.ttf",20);
+    gout<< move_to(0,0) << color(255,219,172) << box(800,800);
+}
+
+void application::tabledraw(){
+    gout<< move_to(0,0) << color(255,219,172) << box(800,800)
         << move_to(0,200) << color(255,219,172) << box(600,600) // játék mező
         << move_to(20,220) << color(138,68,18) << box(560,560)
         << move_to(25,225) << color(255,219,172) << box(550,550) // Külső kocka
@@ -71,5 +80,5 @@ void application::start(int x, int y){
         << move_to(195,590) <<  box(15,15)
         << move_to(195,395) <<  box(15,15)
         << move_to(390,395) <<  box(15,15)
-        << move_to(390,590) <<  box(15,15)<<refresh;
+        << move_to(390,590) <<  box(15,15);
 }

@@ -9,7 +9,9 @@ protected:
     std::string _text;
 public:
     StaticText(application*,int, int, int, int, std::string);
-    virtual ~StaticText();
+    virtual ~StaticText(){
+
+    }
     virtual void draw() const;
     virtual void handle(genv::event);
 };
