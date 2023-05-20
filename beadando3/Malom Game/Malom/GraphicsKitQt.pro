@@ -11,8 +11,7 @@ SOURCES += \
         main.cpp \
         graphics/graphics.cpp \
         statictext.cpp \
-        widgets.cpp \
-        statictext.cpp
+        widgets.cpp
 
 
 INCLUDEPATH += $$PWD/.
