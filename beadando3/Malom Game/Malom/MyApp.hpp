@@ -16,12 +16,15 @@ public:
         ColorLabel = new StaticText(this,20,20,100,40,"Fehér jön");
         whiteCount = new StaticText(this,700,20,50,40,"9");
         blackCount = new StaticText(this,700,60,100,40,"9");
+
+        babu1 = new Babuk(this,600,220,40,40,"feher",0);
     }
 
 
 
 protected:
-    vector<Babuk> babu[18];
+    //vector<Babuk> babu[18];
+    Babuk *babu1;
 
     GameDraw *Tabla;
     StaticText *ColorLabel;
@@ -29,14 +32,14 @@ protected:
     StaticText *blackCount;
 
 
-    std::vector<std::vector<int>> tabla =
+    /*std::vector<std::vector<int>> tabla =
     {{ 0,-1,-1, 0,-1,-1, 0 },
      {-1, 0,-1, 0,-1, 0,-1 },
      {-1,-1, 0, 0, 0,-1,-1 },
      { 0, 0, 0,-1, 0, 0, 0 },
      {-1,-1, 0, 0, 0,-1,-1 },
      {-1, 0,-1, 0,-1, 0,-1 },
-     { 0,-1,-1, 0,-1,-1, 0 }};
+     { 0,-1,-1, 0,-1,-1, 0 }};*/
 };
 
 #endif // MYAPP_HPP

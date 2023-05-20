@@ -54,6 +54,10 @@ void Babuk::handle(event ev)
     if (ev.type == ev_mouse && is_selected(ev.pos_x, ev.pos_y) && ev.button==btn_left) {
         _checked = !_checked;
     }
+    if(ev.type == ev_mouse && ev.button == btn_left && _checked){
+        _x = ev.pos_x;
+        _y = ev.pos_y;
+    }
 }
 
 bool Babuk::is_checked()
