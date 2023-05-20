@@ -12,7 +12,10 @@ public:
 
     };
 
+    virtual void draw() const;
+    virtual void handle(genv::event ev);
     virtual void TableDraw() const;
+    virtual void BabuDraw(int x, int y);
 };
 
 #endif // GAMEDRAW_HPP

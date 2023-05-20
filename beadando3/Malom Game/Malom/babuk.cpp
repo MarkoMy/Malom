@@ -1,4 +1,5 @@
 #include "babuk.hpp"
+#include "widgets.hpp"
 
 
 using namespace genv;
@@ -58,10 +59,4 @@ void Babuk::handle(event ev)
 bool Babuk::is_checked()
 {
     return _checked;
-}
-
-
-void Babuk::uncheck()
-{
-    _checked = false;
 }

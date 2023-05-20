@@ -1,0 +1,10 @@
+release/MyApp.o
+release/application.o
+release/babuk.o
+release/gamedraw.o
+release/gamerules.o
+release/main.o
+release/graphics.o
+release/statictext.o
+release/widgets.o
+release/statictext.o

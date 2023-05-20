@@ -11,7 +11,8 @@ SOURCES += \
         main.cpp \
         graphics/graphics.cpp \
         statictext.cpp \
-        widgets.cpp
+        widgets.cpp \
+        statictext.cpp
 
 
 INCLUDEPATH += $$PWD/.
@@ -32,9 +33,11 @@ DEPENDPATH += $$PWD/SDL2
 HEADERS += \
     ../../../../../../Desktop/laptop mappa/widget/peldawidgetekre/statictext.hpp \
     ../../../../../../Desktop/laptop mappa/widget/peldawidgetekre/statictext.hpp \
+    MyApp.hpp \
     application.hpp \
     babuk.hpp \
     gamedraw.hpp \
     gamerules.hpp \
     statictext.hpp \
-    widgets.hpp
+    widgets.hpp \
+    widgets/statictext.hpp

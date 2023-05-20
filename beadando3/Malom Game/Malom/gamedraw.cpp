@@ -8,7 +8,7 @@ GameDraw::GameDraw(application*parent,int x, int y, int sx, int sy) :
 
 }
 
-void GameDraw::TableDraw() const{
+void GameDraw::draw() const{
         gout<< move_to(0,0) << color(255,219,172) << box(800,800)
             << move_to(0,200) << color(255,219,172) << box(600,600) // játék mező
             << move_to(20,220) << color(138,68,18) << box(560,560)
@@ -43,4 +43,16 @@ void GameDraw::TableDraw() const{
             << move_to(195,395) <<  box(15,15)
             << move_to(390,395) <<  box(15,15)
             << move_to(390,590) <<  box(15,15);
+}
+
+void GameDraw::handle(genv::event ev){
+
+}
+
+void GameDraw::TableDraw() const{
+
+}
+
+void GameDraw::BabuDraw(int x, int y){
+
 }
